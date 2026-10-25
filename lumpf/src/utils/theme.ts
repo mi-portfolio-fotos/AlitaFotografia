@@ -1,0 +1,87 @@
+import { FontType, ThemeColors, ThemeType } from '../types';
+
+export const THEMES: Record<ThemeType, ThemeColors> = {
+  obsidian: {
+    id: 'obsidian',
+    name: 'Obsidian & Gold',
+    bg: 'bg-[#09090b]',
+    cardBg: 'bg-[#121215]/90',
+    border: 'border-amber-500/20',
+    accent: 'bg-amber-500 text-black hover:bg-amber-400',
+    accentHover: 'hover:text-amber-300',
+    textPrimary: 'text-neutral-100',
+    textSecondary: 'text-neutral-400',
+    badge: 'bg-amber-500/10 text-amber-300 border-amber-500/30',
+  },
+  champagne: {
+    id: 'champagne',
+    name: 'Champagne & Linen',
+    bg: 'bg-[#0f0e0d]',
+    cardBg: 'bg-[#1a1715]/90',
+    border: 'border-[#d4be9c]/25',
+    accent: 'bg-[#d4be9c] text-[#1a1715] hover:bg-[#e6cfae]',
+    accentHover: 'hover:text-[#e6cfae]',
+    textPrimary: 'text-[#f5f1eb]',
+    textSecondary: 'text-[#a89f91]',
+    badge: 'bg-[#d4be9c]/15 text-[#e6cfae] border-[#d4be9c]/30',
+  },
+  monochrome: {
+    id: 'monochrome',
+    name: 'Studio Monochrome',
+    bg: 'bg-[#050505]',
+    cardBg: 'bg-[#111111]/90',
+    border: 'border-white/20',
+    accent: 'bg-white text-black hover:bg-neutral-200',
+    accentHover: 'hover:text-white',
+    textPrimary: 'text-white',
+    textSecondary: 'text-neutral-400',
+    badge: 'bg-white/10 text-neutral-200 border-white/30',
+  },
+  'noir-rose': {
+    id: 'noir-rose',
+    name: 'Velvet Noir & Rose',
+    bg: 'bg-[#0c0a0e]',
+    cardBg: 'bg-[#17131b]/90',
+    border: 'border-rose-400/25',
+    accent: 'bg-rose-400 text-black hover:bg-rose-300',
+    accentHover: 'hover:text-rose-300',
+    textPrimary: 'text-neutral-100',
+    textSecondary: 'text-neutral-400',
+    badge: 'bg-rose-500/15 text-rose-300 border-rose-500/30',
+  },
+  'earth-terracotta': {
+    id: 'earth-terracotta',
+    name: 'Earth & Terracotta',
+    bg: 'bg-[#0d100e]',
+    cardBg: 'bg-[#151a17]/90',
+    border: 'border-orange-500/25',
+    accent: 'bg-orange-500 text-black hover:bg-orange-400',
+    accentHover: 'hover:text-orange-300',
+    textPrimary: 'text-neutral-100',
+    textSecondary: 'text-neutral-400',
+    badge: 'bg-orange-500/15 text-orange-300 border-orange-500/30',
+  },
+};
+
+export const FONT_CLASSES: Record<FontType, { heading: string; body: string; label: string }> = {
+  editorial: {
+    heading: "font-['Cormorant_Garamond',Georgia,serif] tracking-wide",
+    body: "font-['Plus_Jakarta_Sans',sans-serif]",
+    label: 'Editorial Serif (Cormorant Garamond)',
+  },
+  luxury: {
+    heading: "font-['Cinzel',serif] tracking-wider uppercase",
+    body: "font-['Montserrat',sans-serif]",
+    label: 'High Luxury (Cinzel & Montserrat)',
+  },
+  modern: {
+    heading: "font-['Playfair_Display',Georgia,serif] italic tracking-normal",
+    body: "font-['Inter',sans-serif]",
+    label: 'Modern Editorial (Playfair Display)',
+  },
+  minimalist: {
+    heading: "font-['Montserrat',sans-serif] font-light tracking-widest uppercase",
+    body: "font-['Plus_Jakarta_Sans',sans-serif]",
+    label: 'Clean Minimalist (Montserrat & Sans)',
+  },
+};

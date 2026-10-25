@@ -1,0 +1,6 @@
+{
+  "name": "Lumina Studios - Portfolio & Client Galleries",
+  "description": "Portfolio profesional de fotografía y entrega de galerías privadas para clientes con sincronización directa en Google Drive, protección por PIN y descargas individuales o ZIP.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
